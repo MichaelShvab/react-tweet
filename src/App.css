@@ -1,0 +1,89 @@
+* {
+  background-color: rgb(21, 32, 43);
+}
+
+.Textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+}
+
+.button {
+  width: 100px;
+  float: right;
+}
+
+.navBar {
+  background-color: rgb(52, 58, 64);
+  color: white;
+  width: 75%;
+  display: flex;
+  border-radius: 5px;
+  padding: 5px 0 0 5px;
+}
+
+.navBar div {
+  background-color: rgb(52, 58, 64);
+  padding: 5px;
+  margin: 0 0 0 5px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tweet {
+  color: white;
+  background-color: rgb(52, 58, 64);
+}
+
+.upperTweet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upperTweet p {
+color: rgb(108, 117, 125);
+}
+
+/* Loader */
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+.l-3 {
+  animation-delay: 0.72s;
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #4b9cdb;
+}
